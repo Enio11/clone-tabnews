@@ -1,7 +1,7 @@
 services:
   database:
-    image: "postgres:16.0-alpine3.18" # docker exec -it clone-tabnews-database-1 psql -U postgres
+    image: "postgres:16.0-alpine3.18"
     environment:
-      POSTGRES_PASSWORD: "Betocarrero666@"
+      - POSTGRES_PASSWORD: "local_password"
     ports:
       - "5432:5432"
